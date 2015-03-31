@@ -1,6 +1,6 @@
 require 'api_constraints'
 Rails.application.routes.draw do
-  resources :recipes, only: [:index]
+  resources :recipes, only: [:index, :show]
   get 'home/index'
 
   devise_for :users
